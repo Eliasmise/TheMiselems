@@ -10,6 +10,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/poppins-extralight-italic.woff") format("woff");
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+}
+
 :root {
   --burgundy: #570007;
   --burgundy-deep: #3f0006;
@@ -424,9 +432,10 @@ button {
 .rsvp-header p {
   max-width: 760px;
   margin: 1rem 0 0;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: clamp(0.95rem, 2vw, 1.15rem);
   font-style: italic;
+  font-weight: 200;
   line-height: 1.35;
 }
 
