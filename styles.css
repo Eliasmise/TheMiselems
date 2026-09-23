@@ -18,7 +18,7 @@
   --powder-blue: #dcecf2;
   --powder-blue-deep: #b9d5df;
   --shadow: rgba(22, 0, 3, 0.42);
-  --envelope-width: min(92vw, 640px);
+  --envelope-width: min(92vw, 760px);
   --envelope-half-height: clamp(120px, 33vw, 214px);
 }
 
@@ -202,8 +202,8 @@ button {
   position: relative;
   z-index: 2;
   display: grid;
-  width: min(82vw, 520px);
-  min-height: min(73svh, 675px);
+  width: min(84vw, 600px, 78svh);
+  min-height: min(82svh, 780px);
   padding: clamp(1.3rem, 4vw, 2.45rem);
   overflow: visible;
   color: var(--burgundy-ink);
@@ -870,7 +870,7 @@ button {
   z-index: 2;
   bottom: 4px;
   left: 50%;
-  width: min(82vw, 520px);
+  width: min(84vw, 600px, 78svh);
   height: calc(100svh + 760px);
   overflow: hidden;
   pointer-events: none;
@@ -1045,6 +1045,32 @@ button {
 @media (max-width: 680px) {
   .card-sleeve {
     width: min(90vw, 470px);
+  }
+}
+
+@media (min-width: 681px) {
+  .save-card {
+    padding: clamp(1.65rem, 3.2vw, 2.8rem);
+  }
+
+  .save-heading {
+    font-size: clamp(1rem, 1.8vw, 1.4rem);
+  }
+
+  .card-middle h1 {
+    font-size: clamp(3.35rem, 7vw, 5.9rem);
+  }
+
+  .card-footer p {
+    font-size: clamp(0.92rem, 1.5vw, 1.22rem);
+  }
+
+  .rsvp-seal {
+    width: clamp(110px, 15vw, 150px);
+  }
+
+  .envelope-name {
+    font-size: clamp(3rem, 7.5vw, 5.5rem);
   }
 }
 
